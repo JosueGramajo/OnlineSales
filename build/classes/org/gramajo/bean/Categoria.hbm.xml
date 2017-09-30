@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.gramajo.bean.Categoria" table="CATEGORIA">
+		<id name="idCategoria" type="java.lang.Integer">
+			<column name="idCategoria"></column>
+			
+		</id>
+		<property name="nombre" type="java.lang.String">
+			<column name="nombre"></column>
+		</property>
+		<property name="descripcion" type="java.lang.String">
+			<column name="descripcion"></column>
+		</property>
+	</class>
+</hibernate-mapping>

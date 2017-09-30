@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="org.gramajo.bean.Factura" table="FACTURA">
+		<id name="idFactura" type="java.lang.Integer">
+			<column name="idFactura"></column>
+			
+		</id>
+		<property name="nombre" type="java.lang.String">
+			<column name="nombre"></column>
+		</property>
+		<property name="precio" type="java.lang.Integer">
+			<column name="precio"></column>
+		</property>		
+		<many-to-one name="game" class="org.gramajo.bean.Game" lazy="false">
+			<column name="idGame"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>
